@@ -1,0 +1,74 @@
+.background {
+	position: relative;
+	background: white;
+	height: 100vh;
+	max-width: 600px;
+	margin: 0 auto;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+.container {
+	padding: 0 20px;
+	height: 100%;
+	text-align: center;
+	color: black;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.logo{
+	margin: 50px 0px;
+	width: 300px;
+	animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	-moz-animation: bounce 3s infinite;
+	-o-animation: bounce 3s infinite;
+}
+
+.weatherCard {
+	border: 2px solid rgb(29, 78, 100);
+	border-radius: 10px;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.date {
+	padding: 50px;
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-end;
+}
+
+
+.forecast__container {
+	display: flex;
+	flex-flow: row;
+}
+
+
+/* KEYFRAME ANIMATIONS */
+
+@-webkit-keyframes bounce {
+	0%, 100% {-webkit-transform: translateY(0);}	
+	50% {-webkit-transform: translateY(-20px);}
+}
+ 
+@-moz-keyframes bounce {
+	0%, 100%  {-moz-transform: translateY(0);}
+	50% {-moz-transform: translateY(-20px);}
+}
+ 
+@-o-keyframes bounce {
+	0%, 100%  {-o-transform: translateY(0);}
+	50% {-o-transform: translateY(-20px);}
+}
+@keyframes bounce {
+	0%, 100%  {transform: translateY(0);}
+	50% {transform: translateY(-20px);}
+}

@@ -1,0 +1,33 @@
+.current__container {
+	width:100%;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.current__icon {
+	width: 100px;
+	height: 100px;
+}
+
+.current__description{
+	text-transform: capitalize;
+}
+
+.current__weather {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.current__condition{
+	display: flex;
+	flex-flow: column;
+	text-align: left;
+}
+
+.current__condition p{
+	margin-bottom: 0px;
+}
